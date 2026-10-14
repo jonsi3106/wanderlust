@@ -1,0 +1,87 @@
+.navbar {
+    background-color: white !important;
+    height: 4rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.fa-slab-press {
+    color: #b0273f;
+    font-size: 2rem;
+}
+
+.f-info {
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.f-info-links,
+.f-info-brand {
+    width: 100%;
+    font-size: 1.2rem;
+     margin: 5px;
+    }
+    
+    .f-info-social{
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 5px;
+}
+
+.f-info-links>a {
+    text-decoration: none;
+    color: black;
+}
+
+.f-info-links>a:hover {
+    text-decoration: underline;
+}
+
+.card{
+    border: none !important;
+    margin: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.card-img-top{
+
+    border-radius: 2rem !important;
+    height: 15rem;
+}
+
+.card-body{
+    padding: 0;
+    font-weight:400 ;
+    /* font-size: 16px; */
+  
+}
+
+.card-anchor{
+    text-decoration: none;
+    color: black;
+}
+.card-anchor:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+.overley{
+    opacity: 1;
+}

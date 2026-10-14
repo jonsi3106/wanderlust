@@ -1,0 +1,43 @@
+.card-text li {
+    padding: 0.5rem 0;
+    list-style: none;
+margin-left: 0;
+}
+
+.card-text{
+    padding-left: 0 !important;
+    margin-left:0 !important ;
+}
+
+.card-img-top {
+    height: 40vh !important;
+    margin-top: 1rem;
+}
+
+.col h2 {
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.show-btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: beige;
+    background-color: #eb1f44;
+}
+
+.delete-btn {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: beige;
+    background-color:#212121;
+}
