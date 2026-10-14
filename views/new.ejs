@@ -1,0 +1,55 @@
+<% layout("/boilerplate.ejs")%>
+
+    <body>
+        <div class="container">
+            <form method="post" action="/listings" novalidate class="needs-validation">
+                <div class="row ">
+                    <div class="col col-8 offset-2-2">
+                        <h2 class="edit">Create New Listing</h2>
+
+
+                        <div class="add">
+                            <label for="title" class="title">Title</label>
+                            <br>
+                            <input class="form-control w-100" name="listing[title]" type="text" placeholder="add title" required>
+                        </div>
+
+                        <div class="add">
+                            <label for="description" class="description">Description</label>
+                            <br>
+                            <textarea class="form-control w-100" name="listing[description]" id="description" placeholder="write here" required></textarea>
+                        </div>
+
+                        <div class="add">
+                            <label for="image" class="image">Image Link</label>
+                            <br>
+                            <input class="form-control w-100" name="listing[image][url]" type="text"
+                                placeholder="enter image URL/Link"">
+                    </div>
+
+                    <div class=" add">
+                            <label for="price" class="price">Price</label>
+                            <br>
+                            <input class="form-control w-100" name="listing[price]" type="number" placeholder="enter price" required>
+                        </div>
+
+
+                        <div class="add">
+                            <label for="location" class="location">Location</label>
+                            <br>
+                            <input class="form-control w-100" name="listing[location]" type="text" placeholder="add location " required>
+                        </div>
+
+                        <div class="add">
+                            <label for="country" class="country">Country</label>
+                            <br>
+                            <input class="form-control w-100" name="listing[country]" type="text" placeholder="add country" required>
+                        </div>
+
+
+                        <button class="add-btn">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
