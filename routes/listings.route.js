@@ -5,7 +5,7 @@ import { Listing } from "../model/listing.model.js";
 
 //listings
 listingRouter.get("/", async (req, res) => {
-    const allListings = await Listing.find({})
+    const allListings = await Listing.find({});
     res.render("listings.ejs", { allListings })
 })
 
@@ -32,6 +32,7 @@ listingRouter.get("/:id", async (req, res) => {
 listingRouter.delete("/:id", async (req, res) => {
     const { id } = req.params;
     await Listing.findByIdAndDelete(id);
+    req.flash("error","Deleted Listing Successfully")
     res.redirect("/listings");
 })
 
@@ -39,6 +40,7 @@ listingRouter.delete("/:id", async (req, res) => {
 listingRouter.post("/", async (req, res) => {
     const newListing = new Listing(req.body.listing);
     await newListing.save();
+    req.flash("success","New Listing Created Successfully");
     res.redirect("/listings");
 })
 
@@ -46,6 +48,7 @@ listingRouter.post("/", async (req, res) => {
 listingRouter.put("/:id", async (req, res) => {
     const { id } = req.params;
     await Listing.findByIdAndUpdate(id, req.body.listing);
+    req.flash("success","Listing Edited ");
     res.redirect(`/listings/${id}`);
 });
 
